@@ -159,13 +159,42 @@ footer {
 }
 
 .participants-section ul {
-  list-style-position: inside;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .participants-section li {
   color: #555;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participants-section span {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #b71c1c;
 }
